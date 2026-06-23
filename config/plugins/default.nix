@@ -1,0 +1,31 @@
+{
+  imports = [
+    ./autopair.nix
+    ./autotag.nix
+    ./color.nix
+    ./comments.nix
+    ./conform.nix
+    ./debug.nix
+    ./fugitive.nix
+    ./indentblank.nix
+    ./linenumbers.nix
+    ./lint.nix
+    ./lsp.nix
+    ./lualine.nix
+    ./marks.nix
+    # ./mason.nix
+    ./oil.nix
+    ./persisted.nix
+    ./scroll.nix
+    ./snacks.nix
+    ./surround.nix
+    ./tabout.nix
+    ./tabs.nix
+    ./telescope.nix
+    ./toggleterm.nix
+    ./transparent.nix
+    ./tree-sitter.nix
+    ./trouble.nix
+    ./undotree.nix
+  ];
+}
