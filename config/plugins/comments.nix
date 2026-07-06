@@ -8,5 +8,6 @@
       '';
     };
     highlight-colors.enable = true;
+    ts-comments.enable = true;
   };
 }

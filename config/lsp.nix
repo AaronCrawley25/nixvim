@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   lsp = {
     servers = {
@@ -5,6 +6,11 @@
       lua_ls.enable = true;
       pyright.enable = true;
       ts_ls.enable = true;
+      qmlls.enable = true;
+      cssls = {
+        enable = true;
+        package = pkgs.callPackage ./vscode-langservers-extracted.nix { };
+      };
     };
 
     keymaps = [
