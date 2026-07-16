@@ -6,7 +6,7 @@
     ./lsp.nix
   ];
 
-  colorscheme = "sonokai";
+  colorscheme = "pywal";
 
   opts = {
     relativenumber = true;
