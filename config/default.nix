@@ -6,7 +6,7 @@
     ./lsp.nix
   ];
 
-  colorscheme = "pywal";
+  colorscheme = "sonokai";
 
   opts = {
     relativenumber = true;
@@ -61,4 +61,9 @@
         },
         })
   '';
+
+  dependencies = {
+    fzf.enable = true;
+    ripgrep.enable = true;
+  };
 }

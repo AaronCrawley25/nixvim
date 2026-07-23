@@ -4,6 +4,21 @@
     telescope = {
       enable = true;
       extensions.ui-select.enable = true;
+
+      settings = {
+        pickers = {
+          find_files = {
+            find_command = [
+              "rg"
+              "--files"
+              "--hidden"
+              "--glob"
+              "!**/.git/*"
+            ];
+          };
+        };
+      };
+
       luaConfig.post = ''
         local builtin = require("telescope.builtin")
         local actions = require("telescope.actions")
